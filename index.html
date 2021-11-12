@@ -390,61 +390,77 @@
       </section>
     </main>
     <footer class="footer_designed footer_backgraund_color">
-      <div class="container_foot">
-        <a href="./index.html" class="logo end link"
-          ><span class="decoration_leters">Web</span>Studio</a
-        >
-        <address class="footer_adress">
-          <ul class="list">
-            <li>m. Warszawa, Aleja Jerozolimska 21</li>
-            <li class="footer_address">info@example.com</li>
-            <li class="footer_address">+48 123 456 789</li>
+      <div class="container flex">
+        <div class="container_foot">
+          <a href="./index.html" class="logo end link"
+            ><span class="decoration_leters">Web</span>Studio</a
+          >
+          <address class="footer_adress">
+            <ul class="list">
+              <li>m. Warszawa, Aleja Jerozolimska 21</li>
+              <li class="footer_address">info@example.com</li>
+              <li class="footer_address">+48 123 456 789</li>
+            </ul>
+          </address>
+        </div>
+        <div class="container_foot">
+          <h3>DOŁĄCZ DO NAS</h3>
+          <ul class="list join">
+            <li>
+              <div class="icon_footer_back transform_color">
+                <svg class="icon_footer" width="44px" height="44px">
+                  <use xlink:href="images/my_sprite.svg#icon-Ellipse-3"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="icon_footer_back transform_color">
+                <svg class="icon_footer" width="44px" height="44px">
+                  <use xlink:href="images/my_sprite.svg#icon-Ellipse"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="icon_footer_back transform_color">
+                <svg class="icon_footer" width="44px" height="44px">
+                  <use xlink:href="images/my_sprite.svg#icon-Ellipse-1"></use>
+                </svg>
+              </div>
+            </li>
+            <li>
+              <div class="icon_footer_back transform_color">
+                <svg class="icon_footer" width="44px" height="44px">
+                  <use xlink:href="images/my_sprite.svg#icon-Ellipse-2"></use>
+                </svg>
+              </div>
+            </li>
           </ul>
-        </address>
-      </div>
-      <div class="container_foot">
-        <h3>DOŁĄCZ DO NAS</h3>
-        <ul class="list join">
-          <li>
-            <div class="icon_footer_back transform_color">
-              <svg class="icon_footer" width="44px" height="44px">
-                <use xlink:href="images/my_sprite.svg#icon-Ellipse-3"></use>
+        </div>
+        <div class="container_foot">
+          <h3>Zapisz się do newslettera</h3>
+          <form class="flex">
+            <input class="foot_mail" type="email" placeholder="E-mail" />
+            <button class="foot_send" type="submit">
+              <p>Zapisz się</p>
+              <svg class="icon_send" width="106px" height="60px">
+                <use xlink:href="images/my_sprite.svg#icon-icon-send"></use>
               </svg>
-            </div>
-          </li>
-          <li>
-            <div class="icon_footer_back transform_color">
-              <svg class="icon_footer" width="44px" height="44px">
-                <use xlink:href="images/my_sprite.svg#icon-Ellipse"></use>
-              </svg>
-            </div>
-          </li>
-          <li>
-            <div class="icon_footer_back transform_color">
-              <svg class="icon_footer" width="44px" height="44px">
-                <use xlink:href="images/my_sprite.svg#icon-Ellipse-1"></use>
-              </svg>
-            </div>
-          </li>
-          <li>
-            <div class="icon_footer_back transform_color">
-              <svg class="icon_footer" width="44px" height="44px">
-                <use xlink:href="images/my_sprite.svg#icon-Ellipse-2"></use>
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="container_foot">
-        <h3>Zapisz się do newslettera</h3>
-        <input type="email" />
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>X</button>
-        <form></form>
+        <h2>Zostaw swoje dane w formularzu poniżej</h2>
+        <form>
+          <input type="text" name="firstmane" id="firrsname"/>
+          <input type="tel" name="tel" id="tel"/>
+          <input type="email" name="email" id="emal"/>
+          <textarea></textarea>
+        </form>
       </div>
     </div>
 
