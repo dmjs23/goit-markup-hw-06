@@ -440,7 +440,7 @@
           <h3>Zapisz się do newslettera</h3>
           <form class="flex">
             <input class="foot_mail" type="email" placeholder="E-mail" />
-            <button class="foot_send" type="submit">
+            <button class="btn_send" type="submit">
               <p>Zapisz się</p>
               <svg class="icon_send" width="106px" height="60px">
                 <use xlink:href="images/my_sprite.svg#icon-icon-send"></use>
@@ -453,14 +453,47 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>X</button>
-        <h2>Zostaw swoje dane w formularzu poniżej</h2>
-        <form>
-          <input type="text" name="firstmane" id="firrsname"/>
-          <input type="tel" name="tel" id="tel"/>
-          <input type="email" name="email" id="emal"/>
-          <textarea></textarea>
-        </form>
+        <button type="button" class="modal__close-btn" data-modal-close>X</button>
+        <div class="modal__container">
+          <h2 class="modal__container_heder">Zostaw swoje dane w formularzu poniżej</h2>
+          <form class="modal__form">
+            <label for="firstname" class="modal__form_label">
+              Imię
+              <svg class="icon_send icon__modal">
+                <use xlink:href="images/my_sprite.svg#icon-modal-person"></use>
+              </svg>
+            </label>
+            <input type="text" name="firstmane" id="firstname" class="modal__form_input" />
+            <label for="tel" class="modal__form_label">
+              Telefon
+              <svg class="icon_send icon__modal">
+                <use xlink:href="images/my_sprite.svg#icon-modal-tel"></use>
+              </svg>
+            </label>
+            <input type="tel" name="tel" id="tel" class="modal__form_input" />
+            <label for="email" class="modal__form_label">
+              Email
+              <svg class="icon_send icon__modal">
+                <use xlink:href="images/my_sprite.svg#icon-modal-mail"></use>
+              </svg>
+            </label>
+            <input type="email" name="email" id="email" class="modal__form_input" />
+            <label for="areaContent" class="modal__form_label">Komentarz</label>
+            <textarea
+              id="areaContent"
+              name="areaContent"
+              placeholder="Wprowadź tekst"
+              class="modal__form_textarea"
+            ></textarea>
+            <div class="modal__form_priwacy">
+              <input type="checkbox" class="modal__form_checkbox" />
+              <label>Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</label>
+            </div>
+            <div class="btn_send_modal">
+              <button class="btn_send" type="submit">Wyślij</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
