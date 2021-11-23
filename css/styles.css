@@ -561,7 +561,7 @@ ul {
 .modal__form_textarea {
   height: 120px;
   resize: none;
-  padding: 5px 20px 0;
+  padding: 12px 16px 0;
 }
 .modal__form_input:focus,
 .modal__form_textarea:focus,
@@ -595,6 +595,9 @@ ul {
 }
 .modal__form_checkbox {
   margin-right: 9px;
+}
+.modal__form_link {
+  color: var(--main-color);
 }
 .btn_send_modal {
   display: flex;
